@@ -1,7 +1,6 @@
 local keymap = vim.keymap
 local opts = { silent = true, noremap = true }
 
--- map leader key
 -- vim.g.mapleader = " "
 
 -- navigation between windows.
