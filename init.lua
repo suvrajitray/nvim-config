@@ -2,5 +2,5 @@
 require("config.lazy")
 
 if vim.g.vscode then
-  require("vscode")
+  require("vs-code")
 end
