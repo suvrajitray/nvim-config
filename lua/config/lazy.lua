@@ -13,6 +13,7 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import any extras modules here
     { import = "lazyvim.plugins.extras.vscode" },
+    { import = "lazyvim.plugins.extras.editor.telescope" },
     { import = "lazyvim.plugins.extras.coding.copilot" },
     { import = "lazyvim.plugins.extras.dap.core" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
