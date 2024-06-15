@@ -1,1 +1,1 @@
-require("vscode.keymaps")
+require("vs-code.keymaps")
