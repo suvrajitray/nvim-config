@@ -2,8 +2,6 @@ local vscode = require("vscode")
 local keymap = vim.keymap
 local opts = { silent = true, noremap = true }
 
--- vim.g.mapleader = " "
-
 -- navigation between windows.
 keymap.set("n", "<C-j>", function()
   vscode.call("workbench.action.navigateDown")
@@ -44,6 +42,14 @@ keymap.set("n", "<leader>-", function()
   vscode.call("workbench.action.splitEditorDown")
 end, opts)
 
+keymap.set("n", "<leader>e", function()
+  vscode.call("workbench.action.toggleSidebarVisibility")
+end, opts)
+
+keymap.set("n", "<leader>r", function()
+  vscode.call("editor.action.rename")
+end, opts)
+
 keymap.set("n", "gr", function()
   vscode.call("editor.action.goToReferences")
 end, opts)
@@ -67,8 +73,8 @@ keymap.set({ "n", "x", "i" }, "<C-d>", function()
   end)
 end)
 
-keymap.set({ "n", "x" }, "<leader>r", function()
-  vscode.with_insert(function()
-    vscode.action("editor.action.refactor")
-  end)
-end)
+-- keymap.set({ "n", "x" }, "<leader>r", function()
+--   vscode.with_insert(function()
+--     vscode.action("editor.action.refactor")
+--   end)
+-- end)
