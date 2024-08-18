@@ -48,7 +48,12 @@ keymap.set("v", "P", '"_dp')
 -- map ctrl + a to select all
 keymap.set("n", "<C-a>", "ggVG", { desc = "select all", silent = true, noremap = true })
 
-keymap.set("n", "<BS>", "vi'", { desc = "map backto select all inside single quot", silent = true, noremap = true })
+keymap.set(
+  "n",
+  "<BS>",
+  "vi'",
+  { desc = "map backspace to select all inside single quot", silent = true, noremap = true }
+)
 
 keymap.set("n", "<CR>", 'vi"', { desc = "map enter to select all inside double quot", silent = true, noremap = true })
 
